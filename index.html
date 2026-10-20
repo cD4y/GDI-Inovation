@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050814">
+  <meta name="description" content="RAISE — AI Transparency Platform untuk memahami dan memeriksa konten digital dengan bantuan AI.">
+  <title>RAISE — AI Transparency Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+  <div class="grid-noise"></div>
+
+  <header class="topbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="RAISE home">
+        <span class="brand-mark" aria-hidden="true"><img src="./assets/raise-logo.png" alt=""></span>
+        <span class="brand-name">RAISE</span>
+        <span class="brand-tag">AI Transparency Platform</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <button class="nav-link active" data-go="content" type="button">Content</button>
+        <button class="nav-link" data-go="chat" type="button">Ask AI</button>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="online"><i></i> AI Online</span>
+        <button class="theme-toggle" id="themeBtn" type="button" aria-label="Ganti tema">Light</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>✦</span> AI TRANSPARENCY PLATFORM</div>
+        <h1>Understand <em>AI.</em><br><strong>Verify What You See.</strong></h1>
+        <p>RAISE membantu Anda memahami konten digital dengan analisis AI yang cepat, transparan, dan mudah dipahami.</p>
+        <div class="hero-actions">
+          <button class="btn primary" data-go="content" type="button"><span class="btn-icon">⌁</span> Cek Konten <span>→</span></button>
+          <button class="btn ghost" data-go="chat" type="button"><span class="btn-icon">◌</span> Tanya AI</button>
+        </div>
+        <div class="trust-row">
+          <span><i>✓</i> Teks</span>
+          <span><i>✓</i> Gambar</span>
+          <span><i>✓</i> Video</span>
+          <span><i>✓</i> AI Chat</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="particle-field">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+        </div>
+
+        <div class="modern-loader" role="img" aria-label="RAISE loading animation">
+          <div class="loader-track"></div>
+          <div class="loader-ring loader-ring-a"></div>
+          <div class="loader-ring loader-ring-b"></div>
+          <div class="loader-dot-track loader-dot-track-a"><i></i></div>
+          <div class="loader-dot-track loader-dot-track-b"><i></i></div>
+          <div class="loader-dot-track loader-dot-track-c"><i></i></div>
+          <div class="loader-core"></div>
+        </div>
+
+        <span class="star star-a">✦</span>
+        <span class="star star-b">✦</span>
+        <span class="star star-c">·</span>
+        <div class="floating-card card-one">
+          <span class="card-kicker">01 · CLARITY</span>
+          <b>More Transparency</b>
+          <span class="card-copy">Understand the signals behind digital content and see what deserves a closer look.</span>
+          <span class="card-status"><i></i> AI-assisted insight · probabilistic</span>
+        </div>
+        <div class="floating-card card-two">
+          <span class="card-kicker">02 · CONFIDENCE</span>
+          <b>More Trust</b>
+          <span class="card-copy">Verify context before you share, publish, or make decisions from what you see online.</span>
+          <span class="card-status"><i></i> Verify first · share smarter</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tool" class="workspace container">
+      <div class="section-intro">
+        <div>
+          <span class="label">RAISE WORKSPACE</span>
+          <h2>One platform. <span>Two ways to understand AI.</span></h2>
+        </div>
+        <p>Gunakan Content Transparency untuk memeriksa media, atau Ask AI untuk berdiskusi langsung.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="RAISE tools">
+        <button class="tab active" data-tab="content" role="tab" aria-selected="true" type="button">
+          <span class="tab-icon">⌁</span>
+          <span><strong>AI Content Transparency</strong><small>Analisis teks, gambar, atau video dan lihat indikator yang tersedia.</small></span>
+          <span class="tab-arrow">↗</span>
+        </button>
+        <button class="tab" data-tab="chat" role="tab" aria-selected="false" type="button">
+          <span class="tab-icon">◌</span>
+          <span><strong>Tanya AI</strong><small>Ajukan pertanyaan, minta penjelasan, atau diskusikan topik AI.</small></span>
+          <span class="tab-arrow">↗</span>
+        </button>
+      </div>
+
+      <div class="panel" id="contentPanel">
+        <div class="panel-heading">
+          <div>
+            <span class="label">CONTENT TRANSPARENCY</span>
+            <h3>Is this content authentic?</h3>
+            <p>Upload media atau masukkan konteks. RAISE akan meneruskan materi yang Anda analisis ke OpenAI melalui server.</p>
+          </div>
+          <span class="secure-chip"><i></i> Server-side API</span>
+        </div>
+
+        <div class="content-grid">
+          <div class="card form-card">
+            <div class="field-head"><label for="c_txt">Teks atau caption</label><span>OPSIONAL</span></div>
+            <textarea id="c_txt" class="content-text" placeholder="Masukkan caption, konteks, atau teks yang ingin diperiksa..."></textarea>
+
+            <div class="field-head"><label for="c_media">Media</label><span>GAMBAR / VIDEO</span></div>
+            <div class="dropzone" id="dropzone" tabindex="0">
+              <input type="file" id="c_media" accept="image/png,image/jpeg,image/webp,image/gif,video/mp4,video/webm,video/quicktime">
+              <div class="upload-icon">↑</div>
+              <strong>Drag &amp; drop file di sini</strong>
+              <span>atau klik untuk memilih file</span>
+              <small>JPG · PNG · WEBP · GIF · MP4 · WEBM · MOV</small>
+            </div>
+            <div id="c_media_status" class="media-status"><i></i> Belum ada media.</div>
+            <img id="c_pv" class="pv" alt="Pratinjau gambar" hidden>
+            <video id="c_vp" class="pv" controls muted playsinline hidden></video>
+
+            <div class="checks">
+              <label class="check"><input type="checkbox" id="c_src"><span></span> Sumber dan pembuat konten diketahui jelas</label>
+              <label class="check"><input type="checkbox" id="c_dis"><span></span> Konten mencantumkan keterangan penggunaan AI</label>
+            </div>
+
+            <div class="acts">
+              <button class="btn primary" id="contentBtn" type="button">✦ Analisis dengan OpenAI <span>→</span></button>
+              <button class="btn text-btn" id="contentDemo" type="button">Isi contoh</button>
+              <button class="btn text-btn" id="contentClear" type="button">Bersihkan</button>
+            </div>
+          </div>
+
+          <div class="card result-card" id="contentResult">
+            <div class="empty">
+              <div class="empty-orb">✦</div>
+              <span class="label">ANALYSIS RESULT</span>
+              <strong>Hasil analisis akan muncul di sini.</strong>
+              <span>Masukkan teks atau media lalu jalankan analisis untuk melihat klasifikasi, confidence, indikator, dan keterbatasannya.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="chatPanel" hidden>
+        <div class="panel-heading">
+          <div>
+            <span class="label">AI ASSISTANT</span>
+            <h3>Ask RAISE AI</h3>
+            <p>Tanyakan apa saja tentang AI. Percakapan dikirim ke OpenAI melalui server RAISE sehingga API key tetap berada di server.</p>
+          </div>
+          <button class="btn text-btn small" id="chatClear" type="button">↻ Percakapan baru</button>
+        </div>
+
+        <div class="chat card">
+          <div class="chat-topline"><span id="chatStatus"><i></i> Siap membantu</span><span>RAISE AI</span></div>
+          <div class="messages" id="messages" aria-live="polite">
+            <div class="msg ai"><div class="avatar">✦</div><div class="bubble">Halo! Saya AI Assistant di RAISE. Tanyakan apa saja atau minta saya menjelaskan sesuatu dengan bahasa sederhana.</div></div>
+          </div>
+          <div class="suggestions">
+            <button type="button" data-suggest="Apa itu AI yang bertanggung jawab?">AI yang bertanggung jawab?</button>
+            <button type="button" data-suggest="Jelaskan cara kerja AI dengan bahasa sederhana.">Cara kerja AI</button>
+            <button type="button" data-suggest="Apa risiko penggunaan AI dalam kehidupan sehari-hari?">Risiko penggunaan AI</button>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <textarea id="chatInput" rows="1" placeholder="Tulis pertanyaan Anda..." autocomplete="off"></textarea>
+            <button class="send" id="chatSend" type="submit" aria-label="Kirim pesan">↑</button>
+          </form>
+          <div class="chat-hint">Enter untuk mengirim · Shift + Enter untuk baris baru</div>
+        </div>
+      </div>
+
+      <div class="disclaimer-row">
+        <span>ⓘ</span>
+        <p>Hasil analisis bersifat probabilistik dan bukan bukti forensik bahwa konten 100% dibuat AI atau 100% asli. Jangan masukkan data rahasia atau informasi pribadi yang tidak perlu.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="brand-mark small" aria-hidden="true"><img src="./assets/raise-logo.png" alt=""></span><strong>RAISE</strong><span>AI Transparency Platform</span></div>
+      <span>Built for a more trustworthy AI future. · © 2026</span>
+    </div>
+  </footer>
+
+  <script src="./js/app.js" defer></script>
+</body>
+</html>
